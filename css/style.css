@@ -296,7 +296,10 @@ body {
         display: block;
         margin-bottom: 1rem;
         line-height: 1rem; 
-        margin-left: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        justify-content: center;
+        
     }
 }
 
