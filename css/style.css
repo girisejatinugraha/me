@@ -1,0 +1,358 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.first-section {
+    background-color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+.home__picture--mask {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: 10px solid #ffffff;
+    box-shadow: 0px 0px 10px #F57D1F;
+}
+
+.home__picture {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.home__picture:hover {
+    transform: scale(1.1);
+}
+
+.hi {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #F57D1F;
+    margin-bottom: 1rem;
+}
+
+.my-name {
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #FF8911;
+    margin-top: 0.5rem;
+}
+
+.informatika {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-media {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.student {
+    text-decoration: none;
+    pointer-events: none;
+    font-family:  'Roboto', sans-serif;
+    font-weight: 550;
+    line-height: 2.5rem;  
+    font-size: 1rem; 
+    color: #1E1E1E;
+    cursor: pointer;
+    border-radius: 0.5rem; 
+    padding: 1rem 1.2rem; 
+    transition: background-color 0.3s ease;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px #F57D1F;
+}
+
+.student img {
+    display: inline-block;
+    pointer-events: none;
+    vertical-align: middle; 
+    margin-right: 0.1rem; 
+    max-width: 30px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.homeBtn {
+    text-decoration: none;
+    font-family:  'Roboto', sans-serif;
+    font-weight: 550;
+    line-height: 2.5rem;  
+    font-size: 1rem; 
+    color: #1E1E1E;
+    cursor: pointer;
+    border-radius: 0.5rem; 
+    padding: 1rem 1.2rem; 
+    transition: background-color 0.3s ease;
+    background: #ffffff;
+    margin-right: 1rem; 
+    box-shadow: 0px 0px 10px #F57D1F;
+}
+  
+.homeBtn:hover {
+    background: linear-gradient(90deg, #F57D1F 0%, #1E1E1E 81%) !important;
+    color: #ffffff;
+    font-weight: 550;
+    box-shadow: 0px 0px 10px #F57D1F;
+}
+
+.homePtn {
+    text-decoration: none;
+    font-family:  'Roboto', sans-serif;
+    line-height: 2.5rem; 
+    font-weight: 550; 
+    font-size: 1rem; 
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0.5rem; 
+    padding: 1rem 1.2rem; 
+    transition: background-color 0.3s ease;
+    background: #F57D1F;
+    margin-right: 1rem; 
+    box-shadow: 0px 0px 10px #F57D1F;
+}
+ 
+.homePtn:hover {
+    background: linear-gradient(90deg, #F57D1F 0%, #1E1E1E 81%) !important;
+    color: #ffffff;
+    font-weight: 550;
+    box-shadow: 0px 0px 10px #F57D1F;
+}
+
+.icon-container {
+    font-size: 25px;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container a:hover ion-icon {
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+    filter: brightness(100%);
+} 
+
+.icon-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.icon-link::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 6px;
+    color: #ffffff;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: var(--icon-color);
+    font-size: 10px;
+    margin-bottom: 0.25rem;
+}
+
+.icon-link:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.whatsapp-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 0.25rem;
+    text-decoration: none;
+    box-shadow: 0 4px 6px #25D366;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.whatsapp-button a::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: #25D366;
+    margin-bottom: 0.25rem;
+    line-height: 10px;
+}
+
+.whatsapp-button a:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.whatsapp-button a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px #25D366;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .icon-container {
+        font-size: 22px;
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatsapp-button a {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        font-size: 30px;
+    }
+
+    .first-section {
+        height: auto;
+        padding: 15px;
+    }
+
+    .home__picture--mask {
+        width: 80px;
+        height: 80px;
+        border: 6px solid #ffffff;
+        margin: 2.5rem auto 0; 
+    }
+
+    .hi {
+        font-size: 1.2rem;
+    }
+
+    .my-name {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .informatika,
+    .student,
+    .homeBtn,
+    .homePtn {
+        font-size: 1rem;
+    }
+    
+    .social-media {
+        font-size: 1rem;
+        margin-top: 2.5rem;
+    }
+
+    .informatika {
+        line-height: 1.5rem;
+    }
+
+    .homeBtn,
+    .homePtn {
+        display: block;
+        margin-bottom: 1rem;
+        line-height: 1rem; 
+        justify-content: center;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+
+    .icon-container {
+        font-size: 25px;
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatsapp-button {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1000;
+    }
+
+    .whatsapp-button a {
+        width: 50px;
+        height: 50px;
+        line-height: 60px;
+        font-size: 30px;
+    }
+
+    .first-section {
+        height: 100vh;
+    }
+
+    .home__picture--mask {
+        width: 120px;
+        height: 120px;
+        border: 10px solid #ffffff;
+    }
+
+    .hi {
+        font-size: 1.4rem;
+    }
+
+    .my-name {
+        font-size: 1.2rem;
+    }
+
+    .informatika,
+    .social-media,
+    .student,
+    .homeBtn,
+    .homePtn {
+        font-size: 1rem;
+    }
+}
